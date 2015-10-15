@@ -7,8 +7,14 @@ package melemparmeriam;
  * @version 1.0.0
  *
  */
-
 public class MeriamConstants {
-	static final double EPS = 1e-7;
-	static double GRAVITY = -9.81;
+	/**
+	* EPS merupakan konstanta epsilon yang digunakan dalam membandingkan double
+	*/
+	protected static final double EPS = 1e-7;
+
+	/**
+	* GRAVITY merupakan konstanta gravitasi yang digunakan dalam perhitungan gerakan parabolic BolaMeriam
+	*/
+	protected static double GRAVITY = -9.81;
 }

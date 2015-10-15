@@ -1,6 +1,27 @@
 package melemparmeriam;
 
-public class InputValidator {
+/**
+ * Kelas ini merupakan kelas yang digunakan untuk menginput sekaligus memvalidasi input
+ * 
+ * @author Aldi Fahrezi
+ * @version 1.0.0
+ *
+ */
+public class InputValidator 
+{	
+	/**
+	* Constructor ini merupakan Constructor default class InputValidator
+	*/
+	public InputValidator() {
+
+	}
+
+	/**
+	* Method ini digunakan untuk menginput integer sekaligus memvalidasinya
+	* 
+	* @param in Scanner yang digunakan untuk mengambil input
+	* @return value hasil input setelah lolos validasi
+	*/
 	public static int inputInt(java.util.Scanner in) {
 		int value;
 		String input;
@@ -17,6 +38,12 @@ public class InputValidator {
 		return value;
 	}
 
+	/**
+	* Method ini digunakan untuk menginput long sekaligus memvalidasinya
+	* 
+	* @param in Scanner yang digunakan untuk mengambil input
+	* @return value hasil input setelah lolos validasi
+	*/
 	public static long inputLong(java.util.Scanner in) {
 		long value;
 		String input;
@@ -33,6 +60,12 @@ public class InputValidator {
 		return value;
 	}
 
+	/**
+	* Method ini digunakan untuk menginput double sekaligus memvalidasinya
+	* 
+	* @param in Scanner yang digunakan untuk mengambil input
+	* @return value hasil input setelah lolos validasi
+	*/
 	public static double inputDouble(java.util.Scanner in) {
 		double value;
 		String input;
@@ -49,6 +82,12 @@ public class InputValidator {
 		return value;
 	}
 
+	/**
+	* Method ini digunakan untuk menginput char sekaligus memvalidasinya
+	* 
+	* @param in Scanner yang digunakan untuk mengambil input
+	* @return value hasil input setelah lolos validasi
+	*/
 	public static char inputChar(java.util.Scanner in) {
 		char value;
 		String input;
