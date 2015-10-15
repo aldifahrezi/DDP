@@ -290,7 +290,10 @@ public class RoundHandler
 				
 				System.out.print("Masukkan sudut meriam (dalam derajat): ");
 				double angle = InputValidator.inputDouble(input);
-				meriam.setAngle(angle);
+				while (!meriam.setAngle(angle)) {
+					System.out.printf("Nilai diluar batas, harus dalam range (0,180), silahkan input lagi: ");
+					angle = InputValidator.inputDouble(input);
+				}
 				
 				System.out.printf("\nTembak!\n");
 				BolaMeriam bola = meriam.fire();
